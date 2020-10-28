@@ -1,0 +1,64 @@
+<section>
+    <div class="desgin-the-curve__bottom">
+        <div class='wrapper desgin-the-curve-wrapper'>
+            <div class="desgin-the-curve__bottom-thirdDiv">
+                <div class="desgin-the-curve__bottom-left">
+                  <div class="desgin-the-curve__bottom-left-children">
+                    <h4>{{section.settings.high_air_rate_subheader}}</h4>
+                    <h1>{{section.settings.high_air_rate_header}}</h1>
+                  </div>
+                </div>
+                <div>
+                  <!-- This div's width shoudn't change -->
+                  <div class="desgin-the-curve__bottom-animationDiv">
+                    <div class="rotate-animation ani-1"><img src="https://cdn.shopify.com/s/files/1/0482/5133/8912/files/30-512.png?v=1603852180" width="100%" height="100%"></div>
+                    <div class="rotate-animation ani-2"><img src="https://cdn.shopify.com/s/files/1/0482/5133/8912/files/30-512.png?v=1603852180" width="100%" height="100%"></div>
+                    <div class="rotate-animation ani-3"><img src="https://cdn.shopify.com/s/files/1/0482/5133/8912/files/30-512.png?v=1603852180" width="100%" height="100%"></div>
+                    <div class="rotate-animation ani-4"><img src="https://cdn.shopify.com/s/files/1/0482/5133/8912/files/30-512.png?v=1603852180" width="100%" height="100%"></div>
+                    <div class="rotate-animation ani-5"><img src="https://cdn.shopify.com/s/files/1/0482/5133/8912/files/30-512.png?v=1603852180" width="100%" height="100%"></div>
+                    <div class="rotate-animation ani-6"><img src="https://cdn.shopify.com/s/files/1/0482/5133/8912/files/30-512.png?v=1603852180" width="100%" height="100%"></div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "Design The Curve",
+    "blocks" : [
+        {
+            "type": "headline",
+            "name": "Top Left Section",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Place Holder Image",
+                    "info": "Square image is recommended"
+                },
+                {
+                    "id": "description",
+                    "type": "text",
+                    "label": "Description",
+                    "default": "Curabitur varius odio dui, feugiat viverra orci suscipt id. Nulla facillsi, Mouris convaillse. Amoriri havi parsett"
+                },
+                {
+                    "id": "high_air_rate_subheader",
+                    "type": "text",
+                    "label": "High Airflow Rate Sub-Header",
+                    "default": "KEY BENEFITS"
+                },
+                {
+                    "id": "high_air_rate_header",
+                    "type": "text",
+                    "label": "High Airflow Rate Header",
+                    "default": "High airflow rate"
+                }
+            ]
+        }
+    ]   
+}
+{% endschema %}
+
